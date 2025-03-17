@@ -1,5 +1,8 @@
 ---
 title: {{title}}
-draft: false
+date: {{date:YYYY-MMM-DD}}
+description: yo fill me up!
+draft: true
+aliases: {{title}}
 tags: []
 ---
