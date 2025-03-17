@@ -3,12 +3,10 @@ id: index
 aliases: []
 tags: []
 draft: false
-title: Hi!, I'm Rey.
+title: Hi, welcome!, I'm Rey.
 ---
 
-You might need to know [[Welcome|"to Whom you are talking to?"]]
-
-> _embrace the chaos! do read n write. do geo, physics and evythn in between. i also code._
+![[Welcome#you-might-need-to-know-some-introduction|"to Whom you are talking to?"]]
 
 ---
 
