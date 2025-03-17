@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/kelreeeeey",
+      "My X ( Twitter ) account": "https://x.com/PemudaMaluku___",
     },
   }),
 }
@@ -17,13 +17,13 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.PageTitle(),
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -34,11 +34,25 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.Explorer({
+      folderClickBehavior: "collapse",
+      folderDefaultState: "collapsed",
+      useSavedState: true,
+      mapFn: (node) => {
+        if (node.isFolder) {
+          node.displayName = "📁 " + node.displayName
+        } else {
+          node.displayName = "📄 " + node.displayName
+        }
+      },
+      order: ["filter", "map", "sort"],
+    }),
+  ],
+  afterBody: [
+    Component.Graph(),
     Component.Backlinks(),
   ],
 }
