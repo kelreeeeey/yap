@@ -1,5 +1,8 @@
 ---
 title: "<% tp.file.title %>"
-draft: false
+date: <% tp.date.now("YYYY-MMM-DD") %>
+description: yo fill me up!
+draft: true
+aliases: <% tp.file.title %>
 tags: []
 ---
