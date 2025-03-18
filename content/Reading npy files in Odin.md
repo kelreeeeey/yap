@@ -20,6 +20,9 @@ draft: false
 >
 > I also wanna be corrected if I am wrong.
 >
+> There will be bunch of senteces that might be confusing to You due to grammars. I'm so sorry,
+> I am trying, yk, born in non-spekaing english country sometimes sucks.
+>
 > AND PLEASE DO NOT USE THIS IN ANY OF YOUR PRODUCTION!, duh?!
 
 I already did decode the `.npy` files in my repo [python-numpy-npy-in-odin](https://github.com/kelreeeeey/python-numpy-npy-in-odin),
@@ -27,13 +30,13 @@ So, if You are more interested to dig and find out yourself, you are welcomed to
 
 ## This whole thing in a nutshell
 
-1. [[#Tools I used when working on this:|I'll inform You tools i used]]
+1. [[#Tools I used when working on this:|I'll inform You tools I used]]
 2. [[#Motivation(s)|I'll inform You what are my motivations]]
 3. [[#Motivation(s)|I'll inform You what are my sources ]]
-4. [[#Small research|I'll inform You WHAT]] & [[#ok, now I am going to talk about "How" the examples implement things, in Odin.|HOW]]  i learned from the sources
+4. [[#Small research|I'll inform You WHAT]] & [[#ok, now I am going to talk about "How" the examples implement things, in Odin.|HOW]]  I learned from the sources
 5. [[#Now, we are talking. How the Numpy's .npy file actually looks like?|I'll inform You how I help myself to extract informations ]]
 6. [[#The Final part|I'll inform You how I did read .npy files in Odin e.i. How to use the final product]]
-7. And finally, You are free to choose to read [[#What I learned from this small project|What I learned from this small project]] or go, see you later 🤘😁
+7. And finally, You are free to choose to read [[#What I learned from this small project|What I learned from this small project]] or go, see You later 🤘😁
 8. [[#References|The references]]
 
 ## Tools I used when working on this:
@@ -44,19 +47,19 @@ So, if You are more interested to dig and find out yourself, you are welcomed to
 
 ## Motivation(s)
 
-I've been working with [Numpy](https://github.com/numpy/numpy) in [Python](https://www.python.org/) since day-1 i put my fingers
+I've been working with [Numpy](https://github.com/numpy/numpy) in [Python](https://www.python.org/) since day-1 I put my fingers
 on keyboards coding in Python. Most of the times, it involves saving-and-loading
 data using Numpy.
 
 As a Geophysics student, multi dimensional arrays/matrix is an absolute objects
-i very often can not avoid while writing programs, like, dead ahh absolute.
+I very often cannot avoid while writing programs, like, dead ahh absolute.
 
-Okay, now that i'm embracing myself to code in lower-level language (relative than
-Python), in this case, [Odin](https://odin-lang.org/), i want to utilize what what i have been using and
+Okay, now that I'm embracing myself to code in lower-level language (relative than
+Python), in this case, [Odin](https://odin-lang.org/), I want to utilize what I have been using and
 producing using Numpy in Python inside Odin. But there is no such a thing `numpy.load(the_file)`
-inside Odin and as far as my ability to surf and dig out the internet, i haven't
+inside Odin and as far as my ability to surf and dig out the internet, I haven't
 found single person doing such a thing, you know, to *avoiding re-inventing the wheel*.
-So, i might need to do it myself, manually.
+So, I might need to do it myself, manually.
 
 ## Small research
 
@@ -68,8 +71,8 @@ able to do the works. But wait, what is exactly the things we are dealing with, 
 * It's `.npy` files.
 * Who made it? Numpy.
 
-so logically, Numpy is the correct source where I  can find "why they made it", and "how they
-made it". Here's what i found in [Numpy Enhancement Proposal (NEP)-1](https://numpy.org/neps/nep-0001-npy-format.html)
+So logically, Numpy is the correct source where I can find "why they made it", and "how they
+made it". Here's what I found in [Numpy Enhancement Proposal (NEP)-1](https://numpy.org/neps/nep-0001-npy-format.html)
 
 > ...
 > _We propose a standard binary file format (NPY) for persisting a single arbitrary NumPy array on disk. The format stores all of the shape and dtype information necessary to reconstruct the array correctly even on another machine with a different architecture. The format is designed to be as simple as possible while achieving its limited goals. The implementation is intended to be pure Python and distributed as part of the main numpy package._
@@ -110,37 +113,36 @@ From that article, Bill basically explain following points;
 Bill also would recommend us to use _hex-viewer_ to bytes in a readable way, since we are working
 with binary formats. Through this work, I use [Hex Editor Neo](https://www.hhdsoftware.com/free-hex-editor).
 
-
 I also came accross [Rickard Andersson's YouTube](https://www.youtube.com/@mccGoNZooo) videos. I learned A LOT
-from his videos. In one of Rickard's videos, he talked about [_bitwise operations_](https://youtu.be/JaOKqXJT4d4?si=dUDrYYE9tC4tuD6m) which basically, at least how i percieved it, tells me how to work with
+from his videos. In one of Rickard's videos, he talked about [_bitwise operations_](https://youtu.be/JaOKqXJT4d4?si=dUDrYYE9tC4tuD6m)
+which basically, at least how I percieved it, tells me how to work with
 bytes, and hex. Rickard then gave example on how byte can be used to represent a set
 of flags (in the case, it was boolean values) that hold certain informations.
 Rickard gave the example using [LZ4](https://github.com/lz4/lz4/blob/dev/doc/lz4_Frame_format.md) which is
 a tool to compressing file.
 
-i specifically watched these playlists which where i found that bitwise operation video:
+I specifically watched these playlists which where I found that bitwise operation video:
 
 1. [The Odin programming language with Rickard](https://youtube.com/playlist?list=PLEQTpgQ9eFCGlQa2z0j_TQTGggHOIF8Z1&si=nxXgXCB5N0-F0s7D)
 2. [Odin in Practice](https://youtube.com/playlist?list=PLEQTpgQ9eFCEg0CTd0KkiqgUpP5V0JM4-&si=oZJoIuzr9s7GXVWu)
 
 I also learn that the impotance of [Byte Order, Endianness](https://youtu.be/VVwbuij_c-Q?si=swPtmyfB6ASxPY-x)
 which also I acquire from Rickard's videos.
-Endianness refers to how bytes are stored in specific order. the orders are:
+Endianness refers to how bytes are stored in specific order. The orders are:
 
 1. Largest first
 2. Smallest first
 
-the endianness actually represent the significancy of those orders
+The endianness actually represent the significancy of those orders
 
 I think [endiannes](https://en.wikipedia.org/wiki/Endianness) is like setting up the base of our assumptions when we
 communicate, but insteadd of human, the subjects are computers.
 
-it matters because human tends to assume over things. the value is stays the same
-but one's perception about it could be varies.
-so this endianness gives us a way to specify and unify the perception upon things
-its like top-down/down-top approach on a problem
+It matters because human tends to assume over things. the value is stays the same
+but one's perception about it could be varies. So this endianness gives us a way to
+specify and unify the perception upon things its like top-down/down-top approach on a problem
 
-Another thing i found through this journey, is [_bytes-stream_](https://en.wikipedia.org/wiki/Bitstream#:~:text=A%20bytestream%20is%20a%20sequence,translation%20between%20bytestreams%20and%20bitstreams.).
+Another thing I found through this journey, is [_bytes-stream_](https://en.wikipedia.org/wiki/Bitstream#:~:text=A%20bytestream%20is%20a%20sequence,translation%20between%20bytestreams%20and%20bitstreams.).
 Bytes-stream refers to a sequence of bytes. I came accross this very nice visualization
 of bytes-stream by [Overcoded](https://en.wikipedia.org/wiki/Bitstream#:~:text=A%20bytestream%20is%20a%20sequence,translation%20between%20bytestreams%20and%20bitstreams.) in a Medium
 article by [West, Z. 2020](https://alphazwest.medium.com/?source=post_page---byline--646343b3d679---------------------------------------), ["What's A Byte Stream, Anyway"](https://alphazwest.medium.com/whats-a-byte-stream-anyway-646343b3d679).
@@ -185,12 +187,12 @@ File_Header :: struct {
 }
 ```
 
-That is an Odin's `struct`. How did he know it? well, I am assuming He just read the Ogawa docs.
+That is an Odin's `struct`. How did He know it? well, I am assuming He just read the Ogawa docs.
 Notice that Bill, G. used `[5]byte` as the type for `magic` field which was encoded while Ogawa
 file format is created, and save information "Ogawa" as the magic.
 
 I ain't going through all the fields of the Ogawa `File_Header struct` above, since it is not
-my concern. The major things i saw from Bill's works is that, we have to know certain things;
+my concern. The major things I saw from Bill's works is that, we have to know certain things;
 
 1. What are the information the header would be holding.
 2. How the informations are being laidout in memory.
@@ -261,10 +263,10 @@ and [Frame Descriptor](https://github.com/lz4/lz4/blob/dev/doc/lz4_Frame_format.
 > ^npdtypes
 
 
-Now that i got at least the information of types that Numpy implements, I need to know what they
+Now that I got at least the information of types that Numpy implements, I need to know what they
 would look like in `.npy` files, like 'em binaries.
 
-Here's the flow diagram of how i did it.
+Here's the flow diagram of how I did it.
 
 ```mermaid
 graph LR
@@ -284,8 +286,8 @@ loop --> no --> make_array
 
 ### Now we're playin with Numpy
 
-
-1. Making the arrays, for simplicity, I'll make 2 arrays, 1st one is 1D array 
+1. Making the arrays, for simplicity, I'll make 2 arrays, 1st one is 1D array
+and the other is 2D array.
 
 > [!ABSTRACT]- Making Numpy arrays
 >  ```python
@@ -296,7 +298,6 @@ loop --> no --> make_array
 >
 >      int8_5 = np.arange(1, 6, 1).astype(np.int8)
 >      # array([1, 2, 3, 4, 5], dtype=int8)
->
 >
 >      uint8_5   = np.arange(1, 6, 1).astype(np.uint8)
 >      uint8_5x5 = np.array(list(uint8_5 + x for x in range(5)))
@@ -377,7 +378,7 @@ In [ Numpy-npy format specification verision 1.0 ](https://numpy.org/neps/nep-00
 
 #### The header and eveyrthin'
 
-Now, I am going to try my Odin amateur skill to represent those things above
+Now, I am going to test my Odin amateur skill to represent those things above
 
 > [!ABSTRACT]- `NumpyHeader` struct
 >
@@ -456,8 +457,8 @@ I created of 1D (postfix-ed by `_5.`) and 2D arrays (postfix-ed by `_5x5` ), and
 >
 >  ```
 
-After that, i need to make sure several things. I utilized [[#^npyformatimpl|Numpy format implementation]] and modified
-it a lil bit to kinda see what is going on inside all of those.
+After that, I need to make sure/check several things by utilizing [[#^npyformatimpl|Numpy format implementation]]
+and modified it a lil bit to kinda see what is going on inside all of those.
 
 The modification was only addition of print functions all over the necessary places
 ```python
@@ -537,13 +538,15 @@ And here the result of 2D array with shape of `5x5` with type of `np.bool_`
 
 ![Input of single numpy file](https://github.com/kelreeeeey/python-numpy-npy-in-odin/raw/main/assets/dirty_1_input_npy.png)
 
-**Note:** I am using a Python libaray [rich]() to print out colorfull strings as a matter of personal preference, if You don't have it, it's okay. the script is going to just be fine.
+**Note:** I am using a Python libaray [rich]() to print out colorfull strings as a
+matter of personal preference, if You don't have it, it's okay. the script is going
+to just be fine.
 
 
-I then run that `dirty.py` script for all of the `.npy` files i created and [awk](https://en.wikipedia.org/wiki/AWK)-ed the output
+I then run that `dirty.py` script for all of the `.npy` files I created and [awk](https://en.wikipedia.org/wiki/AWK)-ed the output
 way trhough to collect following tables, just to filter out unnecessary informations.
-The tables consist of 2 columns, column _Numpy Type_ is the exact datatype that I named the `.npy` files,
-and column _Type in `npy` File Header_ shows the native data type prefix-ed with the endian.
+The tables consist of 2 columns, column _Numpy Type_ is the exact datatype that I named the `.npy`
+files, and column _Type in `npy` File Header_ shows the native data type prefix-ed with the endian.
 
 
 >[!ABSTRACT]- Bool, Byte, and Integer
@@ -1184,12 +1187,13 @@ Now the codeblock itself
 >  ```
 
 
-> [!WARNING]+ in `case "c16"`
+> [!WARNING]+ in `siwthc-case "c16"`
 > for this complex dataype
 > I really have to set `size := 16` to make it works.
-> After a long debugging and printing, i found out that
-> length of the bytes was being read before is not matching the number of elements in header.shape
-> if the length of bytes is being devided by number of the elements.
+> After a long debugging and printing, I found out that
+> length of the bytes was being read before was not matching the number
+> of elements in `header.shape` if the length of bytes is being
+> devided by number of the elements.
 >  ```odin
 >
 >     // other cases ...
@@ -1291,10 +1295,10 @@ end.
 
 ## What I learned from this small project
 
-1. I sometimes find myself crash-out a lil bit when writing program in Odin while assuming i can do things when i code in Python
+1. I sometimes find myself crash-out a lil bit when writing program in Odin while assuming I can do things when I code in Python
 like, let Python collect the garbage for me, etc.
 2. I learn more to be patience watching and reading stuff more carefully and taking notes to things that matter.
-3. Writing in lower-level language are fr harder and need more wide attention span while writing.
+3. Writing in lower-level language are for real harder and need more wide attention span while writing.
 4. I learn about bytes and a little bit of how decode/encode in Odin.
 5. I now know how Numpy internal implementation when they create and writing data into disk
 
