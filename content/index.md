@@ -12,7 +12,7 @@ title: Hi, welcome!, I'm Rey.
 
 ## the contents, you know, things i write
 
-- [[How is it going so far]], it's about lil summary about how i'm going through programming and stuff as Geophysics student.
+- [!] [[How is it going so far]], it's about lil summary about how i'm going through programming and stuff as Geophysics student.
 
 ## collections of things that I am interested in
 
