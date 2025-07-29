@@ -17,6 +17,15 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    // Component.Flex({
+    //   components: [
+    //     {
+    //       Component: Component.Search(),
+    //       grow: true,
+    //     },
+    //     { Component: Component.Darkmode() },
+    //   ],
+    // }),
     Component.PageTitle(),
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
@@ -38,9 +47,44 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Explorer({
+            folderClickBehavior: "collapse",
+            folderDefaultState: "collapsed",
+            useSavedState: true,
+            mapFn: (node) => {
+              if (node.isFolder) {
+                node.displayName = "📁 " + node.displayName
+              } else {
+                node.displayName = "📄 " + node.displayName
+              }
+            },
+            order: ["filter", "map", "sort"],
+          }),
+        },
+      ]
+    })
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.DesktopOnly(Component.Graph()),
+    Component.Backlinks(),
+  ],
+  afterBody: [
+    // Component.Graph(),
+  ],
+}
+
+// components for pages that display lists of pages  (e.g. tags or folders)
+export const defaultListPageLayout: PageLayout = {
+  beforeBody: [
+    Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()
+  ],
+  left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
     Component.Explorer({
       folderClickBehavior: "collapse",
       folderDefaultState: "collapsed",
@@ -54,29 +98,6 @@ export const defaultContentPageLayout: PageLayout = {
       },
       order: ["filter", "map", "sort"],
     }),
-  ],
-  afterBody: [
-    Component.Graph(),
-    Component.Backlinks(),
-  ],
-}
-
-// components for pages that display lists of pages  (e.g. tags or folders)
-export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-    Component.Explorer(),
   ],
   right: [],
 }

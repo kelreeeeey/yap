@@ -2,11 +2,13 @@
 id: Reading npy files in Odin
 aliases: []
 tags:
-  - csci,
-  - python,
-  - programming,
+  - csci
+  - python
+  - programming
   - odin
+date: 2025-Mar-18
 draft: false
+title: Reading npy files in Odin
 ---
 
 > [!WARNING]+ **BIG DISCLAIMER!!**

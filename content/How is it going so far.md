@@ -1,7 +1,7 @@
 ---
 id: How is it going so far
 aliases:
-  - How is it going so far
+  - How I've been crafting my way through programming as Geophysics student
 tags:
   - csci
   - programming
