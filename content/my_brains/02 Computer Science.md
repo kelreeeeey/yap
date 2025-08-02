@@ -1,6 +1,7 @@
 ---
 id: 02 Computer Science
-aliases: []
+aliases:
+  - the things
 tags:
   - csci
   - programming
@@ -13,6 +14,9 @@ title: 02 Computer Science
 1. [[python language|python]]
 2. [[image processing]]
 3. [[mathematic]]
-6. [[odin language]]
-6. [[zig language]]
+4. [[odin language]]
+5. [[zig language]]
 6. [[c language]]
+7. [[machine learning]]
+7. [[deep learning]]
+

@@ -1313,11 +1313,12 @@ interchangeable file formats, like
 
 ## Refernces
 
-1. [Numpy Enhancement Proposal (NEP)-1](https://numpy.org/neps/nep-0001-npy-format.html)
-2. ["Reverse Engineering Alembic"](https://www.gingerbill.org/article/2022/07/11/reverse-engineering-alembic/)
-3. [Odin-Overview](https://odin-lang.org//docs/overview/)
-4. [Numpy's (v1.26.4) documentation about data types](https://numpy.org/doc/1.26/user/basics.types.html)
-5. [Numpy's Github repository "_format_impl.py"](https://github.com/numpy/numpy/blob/82610b4edaf474895a9f4b3ecc0749c7c297099a/numpy/lib/_format_impl.py#L704)
-6. [magic file signature](https://en.wikipedia.org/wiki/List_of_file_signatures)
-7. ["What's A Byte Stream, Anyway"](https://alphazwest.medium.com/whats-a-byte-stream-anyway-646343b3d679)
-8. [Rickard Andersson's YouTube](https://www.youtube.com/@mccGoNZooo)
+> [!INFO]- List of references
+> - [Numpy Enhancement Proposal (NEP)-1](https://numpy.org/neps/nep-0001-npy-format.html)
+> - ["Reverse Engineering Alembic"](https://www.gingerbill.org/article/2022/07/11/reverse-engineering-alembic/)
+> - [Odin-Overview](https://odin-lang.org//docs/overview/)
+> - [Numpy's (v1.26.4) documentation about data types](https://numpy.org/doc/1.26/user/basics.types.html)
+> - [Numpy's Github repository "_format_impl.py"](https://github.com/numpy/numpy/blob/82610b4edaf474895a9f4b3ecc0749c7c297099a/numpy/lib/_format_impl.py#L704)
+> - [magic file signature](https://en.wikipedia.org/wiki/List_of_file_signatures)
+> - ["What's A Byte Stream, Anyway"](https://alphazwest.medium.com/whats-a-byte-stream-anyway-646343b3d679)
+> - [Rickard Andersson's YouTube](https://www.youtube.com/@mccGoNZooo)

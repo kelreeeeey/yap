@@ -1,6 +1,7 @@
 ---
 id: 01 Natural Science
-aliases: []
+aliases:
+  - the things
 tags:
   - nsci
 draft: false
@@ -16,4 +17,4 @@ title: 01 Natural Science
 5. [[human biology]]
 6. [[human evolution]]
 7. [[cognitive revolution]]
-
+8. [[math]]

@@ -16,25 +16,27 @@ title: How is it going so far
 
 # How I've been crafting my way through programming as Geophysics student
 
-* i have been so excited about programming
-* traumatized by C and C++
-* python bought me fr. (first encounter was in programming class in my freshman as geophysics undergrad)
-* Google Bangkit brought me down to the road of Machine Learning and Deep Learning
-* I'm doing Deep Learning to predict fault for 3D seismic data.
-* times go. still exhaustively coding in Python, lovely filthy snake.
-* start to feel like i hate Python, don't get me wrong, it is pretty slow when it comes to process and visualize 3D data.
-* i might need C/C++, okay maybe just C. Big no to C++.
-* Rust emerged.
-* still code in Python
-* Zig emerged.
-* still code in Python
-* start new journey of learning new programming languages
-* Migrated from VSCode to Neovim btw.
-* tried Rust. nah, the syntax was way too complicated for me.
-* come back to Python
-* someone from Brazil made Elixir, a programming language. okay that one is interesting.
-* i found Odin.
-* still code in Python start to code in C
+> [!INFO]- A very long list
+>
+> * i have been so excited about programming
+> * traumatized by C and C++
+> * python bought me fr. (first encounter was in programming class in my freshman as geophysics undergrad)
+> * Google Bangkit brought me down to the road of Machine Learning and Deep Learning
+> * I'm doing Deep Learning to predict fault for 3D seismic data.
+> * times go. still exhaustively coding in Python, lovely filthy snake.
+> * start to feel like i hate Python, don't get me wrong, it is pretty slow when it comes to process and visualize 3D data.
+> * i might need C/C++, okay maybe just C. Big no to C++.
+> * Rust emerged.
+> * still code in Python
+> * Zig emerged.
+> * still code in Python
+> * start new journey of learning new programming languages
+> * Migrated from VSCode to Neovim btw.
+> * tried Rust. nah, the syntax was way too complicated for me.
+> * come back to Python
+> * someone from Brazil made Elixir, a programming language. okay that one is interesting.
+> * i found Odin.
+> * still code in Python start to code in C
 
 Soo... anyways, i was holding on to myself and just started code in C.
 then i decide to expand/extrapolate the C code to Zig, also, probably in Odin too.
@@ -46,6 +48,11 @@ why it locked me in? regardless the usage and core principles of any language, i
 i'm actively yapping and pushing things in Twitter and GitHub. here's what i have been crafting so far.
 
 # The projects i've been writing lately
+
+## Collections of marimo Notebook as static web pages
+
+<iframe src="https://kelreeeeey.github.io/marimo-gh-pages/" width="100%" height="500" frameborder="0"></iframe>
+
 
 ## `Numerical Thingy from book to code, Calculus, Physics and allthat - (mainly) written in C, Python and other language i locked my eyes into.`
 
@@ -60,10 +67,11 @@ big credit to Python project: [ 3D-Seismic-Image-Fault-Segmentation written by J
 
 ## `OdinMathandPhysics`
 
-My personal tools i wrote to speak and code in Odin
+My personal tools i wrote to speak and code in [[odin language|Odin]]
 
-Math and Physics simple procedures inspired by python libraries like numpy, scipy, etc.
+[[math|Math]] and [[physics|Physics]] simple procedures inspired by python libraries like numpy, scipy, etc.
 
 also on [Github](https://github.com/kelreeeeey/OdinMathandPhysics)
+
 
 end. thankyou! see you all next time.
