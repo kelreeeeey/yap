@@ -1,6 +1,6 @@
 ---
 title: {{title}}
-date: {{date:YYYY-MMM-DD}}
+date: {{date}}
 description: yo fill me up!
 draft: true
 aliases: {{title}}

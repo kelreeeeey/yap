@@ -1,5 +1,30 @@
 ---
-title: Welcome to Quartz
+id: index
+aliases: []
+tags: []
+draft: false
+title: Hi!, I'm Rey.
 ---
 
-[[Welcome|Who am i talking to?]]
+You might need to know [[Welcome|"to Whom you are talking to?"]]
+
+> _embrace the chaos! do read n write. do geo, physics and evythn in between. i also code._
+
+---
+
+## the contents, you know, things i write
+
+- [[How is it going so far]], it's about lil summary about how i'm going through programming and stuff as Geophysics student.
+
+## collections of things that I am interested in
+
+
+
+> [!IDEA]- Natural Science
+> ![[./my_brains/01 Natural Science.md#the things]]
+
+> [!IDEA]- Computer Science
+>![[./my_brains/02 Computer Science.md#the things]]
+
+> [!IDEA]- Social Science
+>![[./my_brains/03 Social Science.md#the things]]
