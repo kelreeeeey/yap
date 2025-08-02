@@ -18,7 +18,7 @@ through programming and stuff as Geophysics student.
 
 - [ ] [[Reading npy files in Odin]], pretty self explanatory, but anyways, there I talked about how I construct my thinking to parse `npy` file from [`numpy`](https://numpy.org/)--a famous Python library-- using [Odin](https://odin-lang.org/) a programming language made by Ginger Bill (he's a Physicsists working in JangaFX)
 
-- [ ] [[Marimo Notebook instead of Jupyter Notebook]], I talk about why I use Jupyter notebook, what I like about notebook, and why I started using marimo notebook.
+- [ ] [[Marimo Notebooks|marimo Notebook instead of Jupyter Notebook]], I talk about why I use Jupyter notebook, what I like about notebook, and why I started using marimo notebook.
 
 <!-- ## collections of things that I am interested in -->
 <!---->
