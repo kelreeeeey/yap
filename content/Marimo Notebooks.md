@@ -1,5 +1,5 @@
 ---
-id: Marimo Notebook instead of Jupyter Notebook
+id: Marimo Notebooks
 aliases:
   - marimo Notebook instead of Jupyter Notebook
 tags:
