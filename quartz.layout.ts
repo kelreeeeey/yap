@@ -35,7 +35,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
-  left: [
+  right: [
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -65,14 +65,17 @@ export const defaultContentPageLayout: PageLayout = {
           }),
         },
       ]
-    })
-  ],
-  right: [
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.DesktopOnly(Component.Graph()),
+    }),
     Component.Backlinks(),
+    // Component.RecentNotes({ limit: 5 }),
+  ],
+  left: [
+    Component.DesktopOnly(Component.TableOfContents({
+      collapseByDefault: true,
+    })),
   ],
   afterBody: [
+    Component.DesktopOnly(Component.Graph()),
     // Component.Graph(),
   ],
 }
